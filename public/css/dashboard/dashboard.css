@@ -1,0 +1,83 @@
+.cont {
+  margin: 10vh auto;
+  border-radius: 5px;
+  padding: 5vh 10vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cont h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1rem auto;
+}
+
+.cont #grid {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 20vw;
+  -ms-grid-columns: 0.5fr 3fr 3fr 0.5fr 0.5fr;
+      grid-template-columns: 0.5fr 3fr 3fr 0.5fr 0.5fr;
+  gap: 4px;
+}
+
+.cont #grid div {
+  border: 1px solid black;
+  padding: 0.4rem 1rem;
+}
+
+.cont #grid div a {
+  text-decoration: none;
+  color: black;
+}
+
+.cont #grid div a:hover {
+  color: #1127ee;
+}
+
+.cont #grid div button {
+  padding: 0.4rem 1rem;
+  background-color: transparent;
+  border: 1px solid #e02c2c;
+  border-radius: 5px;
+}
+
+.cont #grid div button:hover {
+  background-color: #e02c2c;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  color: white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.nav {
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin: 1rem;
+}
+
+.nav nav ul li {
+  margin: 0.4rem 1rem;
+}
+
+.nav nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav nav ul li a:hover {
+  color: #1127ee;
+}
+/*# sourceMappingURL=dashboard.css.map */

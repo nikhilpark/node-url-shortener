@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard/dashboard.css">
+    <title>Url Shortener</title>
+</head>
+<body>
+    <%- include('p1.ejs') %>
+    <div class="cont">
+        <h1>Dashboard</h1>
+        <div id="grid">
+            <div>S.no</div>
+            <div>Original URL</div>
+            <div>Shortened URl</div>
+            <div>Clicks</div>
+            <div>Delete item</div>
+
+            <%for(let [i,c] of data.entries()){%>
+
+
+            <div><%= i+1 %></div>
+            <div><a target="blank" href=<%= c.originalUrl %>><%= c.originalUrl %></a></div>
+            <div><a target="blank" href=<%= c.shortenedUrl %>><%= c.shortenedUrl %></a></div>
+            <div><%= c.clicks %></div>
+            <div>
+                <form method="POST" action="/deleteUrl">
+                <input value=<%= c._id %> name="id" style="display:none">
+                <button type="submit">Delete</button>
+                </form>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>

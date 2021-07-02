@@ -1,0 +1,62 @@
+#cont{
+  
+    margin: 20vh auto;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 5vh 10vh;
+    .formContent{
+        margin: 2vh auto;
+        width: fit-content;
+    
+        label{
+            font-size: 1.5rem;
+        }
+         input{
+             font-size: 1rem;
+             width: 20vw;
+            
+         }
+         button{
+             font-size: 1rem;
+             border-radius: 5px;
+             border: 1px solid rgb(5, 138, 5);
+             padding: 0.4rem 1.2rem;
+             background: transparent;
+
+             &:hover{
+                 cursor: pointer;
+                 background: rgb(5, 138, 5);
+                 color: white;
+                 transition: 0.5s ease-in-out;
+             }
+         }
+    }
+}
+
+.nav{
+    font-family: 'Roboto', sans-serif;
+    
+    nav{
+       
+        ul{
+            display: flex;
+            list-style:none;
+            flex-direction:row-reverse;
+            margin: 1rem;
+            li{
+                margin: 0.4rem 1rem;
+                a{
+                    text-decoration: none;
+                    color: rgb(0, 0, 0);
+
+                    &:hover{
+                        color: rgb(17, 39, 238);
+                    }
+
+                }
+            }
+        }
+    }
+}

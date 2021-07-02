@@ -1,0 +1,72 @@
+#cont {
+  margin: 20vh auto;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5vh 10vh;
+}
+
+#cont .formContent {
+  margin: 2vh auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#cont .formContent label {
+  font-size: 1.5rem;
+}
+
+#cont .formContent input {
+  font-size: 1rem;
+  width: 20vw;
+}
+
+#cont .formContent button {
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #058a05;
+  padding: 0.4rem 1.2rem;
+  background: transparent;
+}
+
+#cont .formContent button:hover {
+  cursor: pointer;
+  background: #058a05;
+  color: white;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.nav {
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin: 1rem;
+}
+
+.nav nav ul li {
+  margin: 0.4rem 1rem;
+}
+
+.nav nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav nav ul li a:hover {
+  color: #1127ee;
+}
+/*# sourceMappingURL=addUrl.css.map */
