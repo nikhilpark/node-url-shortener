@@ -1,6 +1,6 @@
 Node URL shortener
 
-To run the app locally make sure you have nodeJs installs follow following steps - 
+To run the app locally make sure you have node installed and follow the following steps - 
 
 1. Open a terminal and clone the repo using
 ```
